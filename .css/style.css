@@ -27,7 +27,7 @@ header {
 
 }
 
-header .logo {
+header .logos {
     width: 12%;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ header .logo {
 
 }
 
-header .logo>a {
+header .logos>a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem;
