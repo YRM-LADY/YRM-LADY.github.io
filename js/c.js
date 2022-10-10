@@ -16,12 +16,12 @@
 // 	document.querySelector("#time").style.backgroundColor="red";
 //   }
 
-  /*
-	1. Get references to all the buttons on the page in an array format.
-	2. Loop through all the buttons and add a click event listener to each one.
+/*
+  1. Get references to all the buttons on the page in an array format.
+  2. Loop through all the buttons and add a click event listener to each one.
 
-	When any button is pressed, the createParagraph() function will be run.
-  */
+  When any button is pressed, the createParagraph() function will be run.
+*/
 
 // window.addEventListener('load',()=>{
 // 	const buttons = document.querySelectorAll('button');
@@ -36,49 +36,49 @@
 // window.addEventListener('load', function () {
 // 	var x = document.querySelectorAll("p");
 // 	document.querySelector('button').addEventListener('click', () => { x[0].style.backgroundColor = "red"; });
-	
+
 // })	
 
 // window.addEventListener("load",()=>{
 
 // 	var listOfDiv=document.querySelector(".navigation").querySelectorAll("div")
-	
+
 // 	 for(var i=0;i<=10;i+=2 )
 // 	{
 // 		let t=listOfDiv[i]
 // 		let tn=listOfDiv[i+1]
 // 		t.addEventListener("mouseover",()=>{
 // 			t.querySelector('div').style.visibility="visible"
-			
+
 // 	   	})
 // 	  	 t.addEventListener("mouseout",()=>{
 // 		   t.querySelector('div').style.visibility="hidden"
 // 	 	})
-			
+
 // 	}
 // 	for(var i=1;i<=11;i+=2 )
 // 	{
 // 		let t=listOfDiv[i]
 // 		t.addEventListener("mouseover",()=>{
 // 			t.style.visibility="visible"
-			
+
 // 	   	})
 // 	  	 t.addEventListener("mouseout",()=>{
 // 		   t.style.visibility="hidden"
 // 	 	})
-			
+
 // 	}
 // })
 
 // window.addEventListener('load',()=>{
 
 // 	var e=document.querySelector('i')
-	
+
 // 	e.addEventListener('click',()=>{
 
-			
-			
-			
+
+
+
 
 // 导航栏
 // window.addEventListener("load",()=>{
@@ -87,15 +87,24 @@
 
 // 	 for(let  e of listOfStair1 )
 // 	{
-	
+
 // 		e.addEventListener("mouseover",()=>{
 // 			e.querySelector(".stair2").style.visibility="visible"
-			
+
 // 	   	})
 // 	  	 e.addEventListener("mouseout",()=>{
 // 		   e.querySelector(".stair2").style.visibility="hidden"
 // 	 	})
-	
+
 // 	}
-	
+
 // })
+window.addEventListener('load', () => {
+	fetch('a.md')
+		.then((data) => {
+			data.text().then((text) => {
+				document.querySelector(".texts").innerHTML =
+				marked.parse(text); 
+			})
+		})
+})
