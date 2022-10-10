@@ -2,7 +2,11 @@
 使边框和内边距的值包含在元素的width和height内 */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+html{
+    font-size: 16px;
+}
 * {
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,30 +313,12 @@ header .user div {
 .banner .content {
     max-width: 1000px;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
-.banner .content>h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
 
-.banner .content>p {
-    font-size: 1em;
-    color: #333;
-}
 
-.banner .content>a {
-    display: inline-block;
-    background: #434978;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 20px;
 
-}
 
 .banner .image {
     max-width: 100%;
